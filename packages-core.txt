@@ -1,0 +1,92 @@
+# packages-core.txt
+# Required packages for this rice — always installed.
+# Assumes a base Arch install (base, linux, grub, networkmanager, sudo already present).
+# Hardware-specific packages (intel-ucode, intel-media-driver) not included — install as needed.
+# Optional components (Kitty, Zsh, Neovim) are in packages-optional.txt.
+# For hacking tools see packages-blackarch.txt.
+#
+# Everything below is in the official Arch repos (installed with plain pacman).
+# wlogout is AUR-only and is NOT listed here — install.sh prints how to build it
+# (read its PKGBUILD first).
+
+# Uwsm needs to be set up as per Arch wiki documentation.
+
+# display manager
+sddm
+
+# wayland / wm
+hyprland
+uwsm
+xdg-desktop-portal-hyprland
+hypridle
+hyprlock
+hyprpicker
+awww
+
+# bar / notifications / launcher
+waybar
+swaync
+rofi
+rofi-calc
+rofi-emoji
+wtype
+swappy
+
+# screenshots (used by .local/bin/screenshot)
+grim
+slurp
+
+# audio
+pipewire
+wireplumber
+alsa-utils
+pamixer
+pulsemixer
+pavucontrol
+playerctl
+
+# theming
+nwg-look
+kvantum
+qt5ct
+qt6ct
+qt5-wayland
+qt6-wayland
+capitaine-cursors
+
+# fonts
+ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
+noto-fonts-emoji
+
+# utils
+cliphist
+wl-clipboard
+libnotify
+jq
+gvfs
+gvfs-mtp
+7zip
+unrar
+tree
+lsof
+brightnessctl
+
+# networking
+ufw
+openbsd-netcat
+
+# build tools (base-devel is also needed to build wlogout from the AUR)
+base-devel
+gcc
+make
+
+# misc
+pacman-contrib
+git
+polkit-kde-agent
+
+# system info / monitor (configs for both are linked by install.sh)
+fastfetch
+btop
